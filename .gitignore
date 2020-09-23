@@ -126,3 +126,4 @@ dmypy.json
 
 config.py
 playground.py
+.vscode/settings.json
