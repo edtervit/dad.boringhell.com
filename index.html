@@ -8,5 +8,92 @@
 </head>
 <body>
     <h1>Ned's Race Reminder</h1>
+    <p> Ticking a box should play a sound 3 minutes before the race starts</p>
+    <button class="stop" onclick="alarmSound.pause()">STOP SOUND</BUTTON>
+    
+    
+    
+<h2>Kempton Park</h2>
+  <h3 class='going'>Standard to Slow</h3>
+  <ul class='the_times'>
+      <li class ='time'>16:25<input type='checkbox' id='Kempton Park16:25' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:00<input type='checkbox' id='Kempton Park17:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:30<input type='checkbox' id='Kempton Park17:30' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>18:00<input type='checkbox' id='Kempton Park18:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>18:30<input type='checkbox' id='Kempton Park18:30' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>19:00<input type='checkbox' id='Kempton Park19:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>19:30<input type='checkbox' id='Kempton Park19:30' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>20:00<input type='checkbox' id='Kempton Park20:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>20:30<input type='checkbox' id='Kempton Park20:30' onclick='checkIfChecked(this)'></li>
+  </ul><h2>Ludlow</h2>
+  <h3 class='going'>Good</h3>
+  <ul class='the_times'>
+      <li class ='time'>14:10<input type='checkbox' id='Ludlow14:10' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:45<input type='checkbox' id='Ludlow14:45' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:20<input type='checkbox' id='Ludlow15:20' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:55<input type='checkbox' id='Ludlow15:55' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:30<input type='checkbox' id='Ludlow16:30' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:05<input type='checkbox' id='Ludlow17:05' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:35<input type='checkbox' id='Ludlow17:35' onclick='checkIfChecked(this)'></li>
+  </ul><h2>Newcastle</h2>
+  <h3 class='going'>Standard</h3>
+  <ul class='the_times'>
+      <li class ='time'>16:05<input type='checkbox' id='Newcastle16:05' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:40<input type='checkbox' id='Newcastle16:40' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:10<input type='checkbox' id='Newcastle17:10' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:40<input type='checkbox' id='Newcastle17:40' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>18:15<input type='checkbox' id='Newcastle18:15' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>18:45<input type='checkbox' id='Newcastle18:45' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>19:15<input type='checkbox' id='Newcastle19:15' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>19:45<input type='checkbox' id='Newcastle19:45' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>20:15<input type='checkbox' id='Newcastle20:15' onclick='checkIfChecked(this)'></li>
+  </ul><h2>Nottingham</h2>
+  <h3 class='going'>Soft (Good to Soft in places)</h3>
+  <ul class='the_times'>
+      <li class ='time'>12:00<input type='checkbox' id='Nottingham12:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>12:30<input type='checkbox' id='Nottingham12:30' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>13:00<input type='checkbox' id='Nottingham13:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>13:30<input type='checkbox' id='Nottingham13:30' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:00<input type='checkbox' id='Nottingham14:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:35<input type='checkbox' id='Nottingham14:35' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:10<input type='checkbox' id='Nottingham15:10' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:45<input type='checkbox' id='Nottingham15:45' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:15<input type='checkbox' id='Nottingham16:15' onclick='checkIfChecked(this)'></li>
+  </ul><h2>Sedgefield</h2>
+  <h3 class='going'>Good (Good to Soft in places)</h3>
+  <ul class='the_times'>
+      <li class ='time'>13:15<input type='checkbox' id='Sedgefield13:15' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>13:45<input type='checkbox' id='Sedgefield13:45' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:19<input type='checkbox' id='Sedgefield14:19' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:54<input type='checkbox' id='Sedgefield14:54' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:29<input type='checkbox' id='Sedgefield15:29' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:00<input type='checkbox' id='Sedgefield16:00' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:35<input type='checkbox' id='Sedgefield16:35' onclick='checkIfChecked(this)'></li>
+  </ul><h2>Galway (IRE)</h2>
+  <h3 class='going'>Soft</h3>
+  <ul class='the_times'>
+      <li class ='time'>13:55<input type='checkbox' id='Galway (IRE)13:55' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:27<input type='checkbox' id='Galway (IRE)14:27' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:02<input type='checkbox' id='Galway (IRE)15:02' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:37<input type='checkbox' id='Galway (IRE)15:37' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:10<input type='checkbox' id='Galway (IRE)16:10' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:45<input type='checkbox' id='Galway (IRE)16:45' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:15<input type='checkbox' id='Galway (IRE)17:15' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:45<input type='checkbox' id='Galway (IRE)17:45' onclick='checkIfChecked(this)'></li>
+  </ul><h2>Navan (IRE)</h2>
+  <h3 class='going'>Soft (Heavy in places)</h3>
+  <ul class='the_times'>
+      <li class ='time'>14:05<input type='checkbox' id='Navan (IRE)14:05' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>14:40<input type='checkbox' id='Navan (IRE)14:40' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:15<input type='checkbox' id='Navan (IRE)15:15' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>15:50<input type='checkbox' id='Navan (IRE)15:50' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:20<input type='checkbox' id='Navan (IRE)16:20' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>16:55<input type='checkbox' id='Navan (IRE)16:55' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:25<input type='checkbox' id='Navan (IRE)17:25' onclick='checkIfChecked(this)'></li>
+      <li class ='time'>17:55<input type='checkbox' id='Navan (IRE)17:55' onclick='checkIfChecked(this)'></li>
+  </ul>
+
+<audio id="alarm" src="sounds/crazy_frog.mp3" preload="auto" hidden></audio>
+<script src="ringer.js"></script> 
 </body>
 </html> 
