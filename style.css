@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    
+}
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    
+    justify-content: center;
+    
+}
+
+.a_track{
+    padding: 1rem 3rem;
+    background-color: ;
+    text-align: center;
+}
+
+.the_times{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 ;
+}
+
+.time{
+    
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+}
+
+
+/* Button styling */
+
+button{
+    padding: 1rem 20rem;
+    font-size: 1rem;
+    background-color: tomato;
+    border: none;
+    color: white;
+}
+
+button:active{
+    background-color: green;
+}
+
+button:focus{
+    border: none;
+    outline: none
+}
+
+
+
+/* Checkbox styling */
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    vertical-align: middle;
+    width: 30px; 
+    height: 30px;
+    font-size: 20px;
+    background-color: #eee;
+    text-align: center;
+    
+}
+
+input[type=checkbox]:checked:after {
+    position: relative;
+    padding: 0 0.5rem;
+    background-color: tomato;
+    color: white;
+    content: "\2713"; /* check mark */
+}
