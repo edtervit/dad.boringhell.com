@@ -50,7 +50,7 @@ for key, value in times_and_tracks.items():
     main_html += "  <h3 class='going'>" + value[0] + "</h3>" + "\n" # write first item (going) in the value's list (going+times) 
     main_html += "  <ul class='the_times'>" + "\n"    #create a list opening
     for i in value[1:]: #for each i in list of times create a list item
-        main_html += "      <li class ='time'>" + i + "<input type='checkbox' id='" + key + i + "' onclick='checkIfChecked(this)'>" + "</li>" + "\n"
+        main_html += "      <li class ='time'>" + i + "<input type='checkbox' id='" + key + i + "' onclick='checkIfChecked(this)'>" +"<p></p>" +  "</li>" + "\n"
     main_html += "  </ul> \n</div> \n" # closes list
     
 

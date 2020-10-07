@@ -9,7 +9,7 @@ function checkIfChecked(ele){
     
     const alarmSound = document.getElementById('alarm');
         
-    
+    const loc = document.getElementById(id)
     
     if (checkBox.checked == true){
         function addZero(i) {
@@ -72,12 +72,35 @@ function checkIfChecked(ele){
             alarmSound.play()
             document.getElementById(id).parentElement.style.border = "solid 3px tomato"
         }, waitTime);
+
+        
+
+        loc.nextSibling.innerHTML = ` ${waitTime / 60000} minutes until race. `
+
+        let countdownTime = waitTime
+
+        countdown = setInterval(function(){
+            console.log(countdownTime)
+            countdownTime -= 60000
+            console.log("after 6 seconds" + countdownTime)
+            if (countdownTime == 0){
+                loc.nextSibling.innerHTML = ""
+                clearInterval(countdown);
+                return
+            }
+            loc.nextSibling.innerHTML = `${countdownTime / 60000} minutes until race.`
+        }
+        ,60000)
+
+
     }
     else{
-        document.getElementById(id).parentElement.style.border = "none"
-        alarmSound.pause()
+        document.getElementById(id).parentElement.style.border = "none";
+        alarmSound.pause();
         clearTimeout(ringAlarm);
-        console.log("Clearing alarm")
+        clearInterval(countdown);
+        loc.nextSibling.innerHTML = ""
+        console.log("Clearing alarm");
     }
 }
 
