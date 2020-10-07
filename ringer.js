@@ -68,13 +68,16 @@ function checkIfChecked(ele){
 
 
         alarmSound.currentTime = 0;
-        setTimeout(function(){
+        ringAlarm = setTimeout(function(){
             alarmSound.play()
+            document.getElementById(id).parentElement.style.border = "solid 3px tomato"
         }, waitTime);
     }
     else{
-
-        
+        document.getElementById(id).parentElement.style.border = "none"
+        alarmSound.pause()
+        clearTimeout(ringAlarm);
+        console.log("Clearing alarm")
     }
 }
 
