@@ -23,5 +23,5 @@ def upload_to_aws(local_file, bucket, s3_file, ExtraArgs):
 
 
 def upload_index():
-    upload_to_aws('E:\Dropbox\Dropbox\Dev\Work\dad.boringhell.com\index.html', 'www.dad.boringhell.com', 'index.html', ExtraArgs={'ContentType': 'text/html'})
+    upload_to_aws('index.html', 'www.dad.boringhell.com', 'index.html', ExtraArgs={'ContentType': 'text/html'})
 
